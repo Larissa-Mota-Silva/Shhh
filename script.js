@@ -15,7 +15,7 @@ const lines = [
   { text: "Espero que você nunca esqueça o quanto é especial para mim. ✨", className: "" },
   { text: "Com amor, sempre. 💌", className: "big" }
 ];
-
+ 
 let opened = false;
 
 function createParticles() {
