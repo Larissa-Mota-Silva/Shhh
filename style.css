@@ -202,6 +202,14 @@ body {
   scrollbar-width: thin;
 }
 
+.message::-webkit-scrollbar {
+  width: 6px;
+}
+
+.message::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
 .message .line {
   display: block;
   opacity: 0;
