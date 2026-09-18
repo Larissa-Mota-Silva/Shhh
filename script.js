@@ -140,19 +140,33 @@ function showMessage() {
   cursor.classList.remove("hidden");
   again.classList.add("hidden");
 
-  lines.forEach((line, index) => {
-    const span = document.createElement("span");
+  const STANZA_DELAY = 3500; // tempo entre cada estrofe
 
-    span.className = `line ${line.className}`;
-    span.textContent = line.text;
+lines.forEach((line, index) => {
+  const span = document.createElement("span");
 
-    // Cada verso aparece depois do anterior
-    span.style.animationDelay = `${index * 0.75}s`;
+  span.className = `line ${line.className}`;
+  span.textContent = line.text;
 
-    message.appendChild(span);
-  });
+  span.style.animationDelay = `${index * STANZA_DELAY}ms`;
 
-  const totalTime = lines.length * 750 + 900;
+  message.appendChild(span);
+
+  // Faz a carta acompanhar o texto automaticamente
+  setTimeout(() => {
+    span.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+  }, index * STANZA_DELAY + 500);
+});
+
+const totalTime = lines.length * STANZA_DELAY + 1500;
+
+setTimeout(() => {
+  cursor.classList.add("hidden");
+  again.classList.remove("hidden");
+}, totalTime);
 
   setTimeout(() => {
     cursor.classList.add("hidden");
