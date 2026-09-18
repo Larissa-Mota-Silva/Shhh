@@ -6,71 +6,108 @@ const cursor = document.getElementById("cursor");
 const again = document.getElementById("again");
 
 const lines = [
-  
-  { text: "Eu amo o jeito que você fala comigo,", className: "" },
-  { text: "e o jeito que você consegue me fazer rir.", className: "" },
-  { text: "Amo nossas conversas sem sentido", className: "" },
-  { text: "e as que fazem a gente perder a noção do tempo.", className: "" },
+  {
+    text: `Eu amo o jeito que você fala comigo,
+e o jeito que você consegue me fazer rir.
+Amo nossas conversas sem sentido
+e as que fazem a gente perder a noção do tempo.`,
+    className: ""
+  },
 
-  { text: "Amo suas manias,", className: "" },
-  { text: "até aquelas que provavelmente", className: "" },
-  { text: "você nem percebe que tem.", className: "" },
-  { text: "Amo odiar quando você tenta me irritar", className: "" },
-  { text: "e fica satisfeito por conseguir tão facilmente.", className: "" },
+  {
+    text: `Amo suas manias,
+até aquelas que provavelmente
+você nem percebe que tem.
+Amo odiar quando você tenta me irritar
+e fica satisfeito por conseguir tão facilmente.`,
+    className: ""
+  },
 
-  { text: "Amo nossas pequenas implicâncias,", className: "" },
-  { text: "as brincadeiras bobas", className: "" },
-  { text: "e esse nosso jeito estranho", className: "" },
-  { text: "de demonstrar carinho.", className: "" },
+  {
+    text: `Amo nossas pequenas implicâncias,
+as brincadeiras bobas
+e esse nosso jeito estranho
+de demonstrar carinho.`,
+    className: ""
+  },
 
-  { text: "Amo quando você está certo.", className: "" },
-  { text: "E amo ainda mais quando você está errado", className: "" },
-  { text: "e eu tenho a oportunidade", className: "" },
-  { text: "de te lembrar disso.", className: "" },
+  {
+    text: `Amo quando você está certo.
+E amo ainda mais quando você está errado
+e eu tenho a oportunidade
+de te lembrar disso.`,
+    className: ""
+  },
 
-  { text: "Amo quando você me faz rir", className: "" },
-  { text: "até nos dias em que eu não estava com vontade.", className: "" },
-  { text: "Amo quando você me abraça", className: "" },
-  { text: "e, por alguns segundos,", className: "" },
-  { text: "parece que o resto pode esperar.", className: "" },
+  {
+    text: `Amo quando você me faz rir
+até nos dias em que eu não estava com vontade.
+Amo quando você me abraça
+e, por alguns segundos,
+parece que o resto pode esperar.`,
+    className: ""
+  },
 
-  { text: "Amo nossas estranhices,", className: "" },
-  { text: "nossos planos,", className: "" },
-  { text: "as coisas que a gente ainda quer viver", className: "" },
-  { text: "e até aquelas que a gente inventa", className: "" },
-  { text: "sem saber se um dia vão acontecer.", className: "" },
+  {
+    text: `Amo nossas estranhices,
+nossos planos,
+as coisas que a gente ainda quer viver
+e até aquelas que a gente inventa
+sem saber se um dia vão acontecer.`,
+    className: ""
+  },
 
-  { text: "Amo estar perto de você.", className: "" },
-  { text: "E odeio quando preciso ir embora.", className: "" },
+  {
+    text: `Amo estar perto de você.
+E odeio quando preciso ir embora.`,
+    className: ""
+  },
 
-  { text: "Amo a pessoa que você é comigo,", className: "" },
-  { text: "mas amo também a pessoa que você é", className: "" },
-  { text: "quando ninguém está olhando.", className: "" },
+  {
+    text: `Amo a pessoa que você é comigo,
+mas amo também a pessoa que você é
+quando ninguém está olhando.`,
+    className: ""
+  },
 
-  { text: "E talvez eu pudesse continuar", className: "" },
-  { text: "fazendo uma lista enorme", className: "" },
-  { text: "de tudo que amo em você.", className: "" },
+  {
+    text: `E talvez eu pudesse continuar
+fazendo uma lista enorme
+de tudo que amo em você.
 
-  { text: "Mas, no fim,", className: "" },
-  { text: "todas essas coisas me levam", className: "" },
-  { text: "para o mesmo lugar.", className: "" },
+Mas, no fim,
+todas essas coisas me levam
+para o mesmo lugar.`,
+    className: ""
+  },
 
-  { text: "Porque eu não amo apenas", className: "" },
-  { text: "o jeito que você fala,", className: "" },
-  { text: "o jeito que você ri,", className: "" },
-  { text: "as suas manias", className: "" },
-  { text: "ou as nossas brincadeiras.", className: "" },
+  {
+    text: `Porque eu não amo apenas
+o jeito que você fala,
+o jeito que você ri,
+as suas manias
+ou as nossas brincadeiras.`,
+    className: ""
+  },
 
-  { text: "Eu amo você.", className: "big" },
+  {
+    text: `Eu amo você.`,
+    className: "big"
+  },
 
-  { text: "E acho que essa é justamente", className: "" },
-  { text: "a única coisa sobre você", className: "" },
-  { text: "que eu nunca vou conseguir", className: "" },
-  { text: "explicar direito.", className: "" },
+  {
+    text: `E acho que essa é justamente
+a única coisa sobre você
+que eu nunca vou conseguir
+explicar direito.`,
+    className: ""
+  },
 
-  { text: "Mas posso tentar,", className: "" },
-  { text: "estando com você", className: "" },
-  { text: "pelo resto das nossas vidas. ❤️", className: "big" }
+  {
+    text: `Mas posso tentar,
+estando com você pelo resto de nossas vidas.`,
+    className: "big"
+  }
 ];
 
 let opened = false;
