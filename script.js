@@ -146,10 +146,12 @@ lines.forEach((line, index) => {
   const span = document.createElement("span");
 
   span.className = `line ${line.className}`;
+  span.innerHTML = line.text.replace(/\n/g, "<br>");
   span.textContent = line.text;
 
   span.style.animationDelay = `${index * STANZA_DELAY}ms`;
-
+  span.style.animationDelay = `${index * 3.5}s`;
+  
   message.appendChild(span);
 
   // Faz a carta acompanhar o texto automaticamente
